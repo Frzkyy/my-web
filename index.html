@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>CRUD Mahasiswa</h1>
+
+        <form id="form-data">
+            <input type="hidden" id="id">
+
+            <input
+                type="text"
+                id="nama"
+                placeholder="Masukkan nama mahasiswa"
+                required
+            >
+
+            <button type="submit" id="tombol-simpan">
+                Tambah Data
+            </button>
+
+            <button type="button" id="tombol-batal" hidden>
+                Batal
+            </button>
+        </form>
+
+        <p id="pesan"></p>
+
+        <h2>Daftar Mahasiswa</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nama</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+
+            <tbody id="daftar"></tbody>
+        </table>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
